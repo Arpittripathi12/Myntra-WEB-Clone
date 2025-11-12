@@ -2,6 +2,8 @@ import {BsFillPersonFill} from "react-icons/bs"
 import {FaFaceGrinHearts,FaBagShopping} from "react-icons/fa6"
 import { useSelector } from "react-redux";
 import {Link} from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
+
 const Header=()=>{
 const bag= useSelector((store)=>store.bag);
  return <>
@@ -26,7 +28,12 @@ const bag= useSelector((store)=>store.bag);
           </a>
         </nav>
         <div className="search_bar">
-            <span className="material-symbols-outlined search_icon">search</span>
+          
+            <CiSearch style={{"margin":"10px", "padding":"0px"}}/>
+
+          
+            
+
           <input
             className="search_input"
             placeholder="Search for products, brands and more"

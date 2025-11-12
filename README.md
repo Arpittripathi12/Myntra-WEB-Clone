@@ -1,0 +1,3 @@
+/*
+This is a myntra clone using MERN Stack
+*/
